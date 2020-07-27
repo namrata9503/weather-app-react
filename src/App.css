@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karma', serif;
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karma', serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 95.5%;
+  background-color: #f7f7f7;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 72.5%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 95.5%;
+  }
+}
+
+@media (max-width: 650px) {
+  html {
+    font-size: 75.5%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+.app {
+  /* background-image: url('./assests/warm-bg.jpg'); */
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  /* padding: 5rem 150px; */
+  min-width: 100%;
+  background-color: #d5adc8;
+background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+height: 100vh;
+}
+
+.app.warm {
+  height: 100vh;
+  /* background-image: url('./assests/sunny-bg.jpg'); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  /* padding: 5rem 150px; */
+  min-width: 100%;
+  background-color: #734ae8;
+  background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
+  /* background-image: linear-gradient(to bottom, #3b679e 0%, #2b88d9 40%, #2b88d9 43%,
+   #207cca 49%, #207cca 56%, #7db9e8 100%); */
+}
+section{
+  display: flex;
+  
+
+}
+@media screen and (max-width: 850px){
+section {
+    width: 94%;
+}
+}
+@media screen and (max-width: 830px){
+  .app{
+      height: 200vh;
+      
+  }
+  .app.warm{
+    height: 200vh;
+  }
+  section {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+      /* margin-top: 50px; */
+      
+  }
+  }
+  @media screen and (max-width: 500px){
+    .app{
+        height: 200vh;
+        
+    }
+    section {
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      align-items: center;
+        /* margin-top: 50px; */
+        
+    }
+    }
+.app-main {
+  min-height: 85vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.815));
+
+  width: 350px;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+ .sunny{
+  height: 85vh;
+  width: 350px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.911)), 
+  url('./assests/cityday.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(to top,
+     #3b679e 0%, #2b88d9 40%, #2b88d9 43%, #207cca 49%, #207cca 56%, #7db9e8 100%); */
+   
+}
+.winter{
+  height: 85vh;
+  width: 350px;
+  background-image: url('./assests/citylights.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search-box {
+  width: 94%;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 98%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  /* margin-top: -25px; */
+  margin: 0 15px 0 15px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location-boxx{
+  display: flex;
+  justify-content: flex-start;
+}
+.loc {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  padding-left: 10px;
+}
+
+ .date {
+  color: #FFF;
+  /* font-size: 2.4rem; */
+  font-weight: 300;
+  font-style: italic;
+  /* text-align: center; */
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+ display: flex;
+ flex-direction: column;
+ padding-left: 20px;
+}
+
+
+.weather-boxx  {
+  height: 240px;
+  position: relative;
+    display: inline-block;
+    margin: 10px;
+    /* background-color: rgba(238, 197, 197, 0.2); */
+    /* border-radius: 16px; */
+    padding: 15px 25px;
+    color: #FFF;
+    font-size: 6rem;
+    font-weight: 900;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    
+}
+.temp{
+  position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.temp .temperature{
+  font-size: 7rem;
+}
+.temp .cell{
+  font-size: 4rem;
+}
+ .weatherr .descriptionn {
+  position: absolute;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  top: 178px;
+  left: 10px;
+}
+
+/* .description{
+  
+  font-size: 2.4rem;
+  color: #fff;
+} */
+.iconn{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 55px;
+  left: 10px;
+}
+.iconImg{
+
+ 
+ padding-left:10px;
+  color: #FFF;
+  font-size: 45px;
+  
+
+}
+.msg{
+  display: block;
+  color: #fff;
+  font-size: 30px;
+  margin-top: 10px;
+}
+/* footer */
+
+.footer {
+  position: relative;
+    width: 100%;
+    height: 5.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    left:-70px;
+}
+.humidity {
+  left: 2.5rem;
+  position: absolute;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.wind {
+  right: 2.5rem;
+  position: absolute;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.Humidityimg {
+  width: 4.2rem;
+  height: 4.2rem;
+  position: absolute;
+  left: 7.9rem;
+  bottom: -0.5rem;
+}
+
+.Windimg {
+  width: 4.2rem;
+  height: 4.2rem;
+  position: absolute;
+  right: 5.9rem;
+  bottom: -0.5rem;
+}
+
+.spanh {
+  position: absolute;
+    left: 3.5rem;
+    bottom: 0.6rem;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.spanw {
+  position: absolute;
+    left: 5.5rem;
+    bottom: -0.4rem;
+    width: 100%;
+    font-size: 1.4rem;
+
+}
+@media screen and (max-width: 750px){
+  .spanh{
+    font-size: 1.9rem;
+  }
+  .spanw {
+    
+    position: absolute;
+    left: 7.5rem;
+    bottom: -1.2rem;
+    width: 100%;
+    font-size: 1.9rem;
+
+      
+  }
+  .Humidityimg {
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: 10.9rem;
+    bottom: -0.5rem;
+  }
+}

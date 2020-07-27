@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karma', serif;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    background-color: #f7f7f7;
+  }
+  
+  @media (max-width: 1200px) {
+    html {
+      font-size: 62.5%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    html {
+      font-size: 55.5%;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    html {
+      font-size: 45.5%;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 42.5%;
+    }
+  }
+  .currentbg {
+    /* background-image: url('../assests/wind.png'); */
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    width: 450px;
+  
+    border-radius: 5px;
+    box-shadow: 0 6px 28px -3px rgba(0, 0, 0, 0.75);
+    color: white;
+    position: relative; 
+    
+    
+ }
+ .button{
+   display: none;
+ }
+ @media screen and (max-width: 830px){
+  
+  .button {
+    
+      display: block;
+  }
+}
+ @media screen and (max-width: 500px){
+  
+  .currentbg {
+    
+    width: 400px;
+      
+  }
+  .weather-box .cel{
+      
+    font-size: 4rem;
+    position: absolute;
+    right: 147px !important;
+    top: 30px;
+
+  }
+  }
+  @media screen and (max-width: 430px){
+  
+    .currentbg {
+      
+      width: 370px;
+        
+    }
+    
+    
+    .weather-box .cel{
+      
+      font-size: 4rem;
+      position: absolute;
+      right: 137px !important;
+      top: 30px;
+  
+    }
+    }
+  main {
+    min-height: 85vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.863));
+   
+  }
+  
+  .location-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .location-box .location {
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    text-transform: uppercase;
+    text-align: center; 
+  }
+  
+   .date{
+    color: #FFF;
+    /* font-size: 2.4rem; */
+    font-weight: 300;
+    font-style: italic;
+    /* text-align: center; */
+    text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+   display: flex;
+   flex-direction: column;
+   padding-left: 20px;
+   padding-bottom: 8px;
+
+  }
+  .date span{
+     font-size: 2rem;
+  }
+  
+  .weather-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* padding: 10px; */
+    /* width: 140px; */
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .weather-box .tempe {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 9rem;
+    font-weight: 900;
+    line-height: 11rem;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+    padding-top: 26px;
+    
+  }
+  .weather-box .cel{
+    font-size: 3rem;
+    position: absolute;
+    right: 157px;
+    top: 30px;
+
+  }
+
+  .weather{
+    text-align: center;
+    display: flex;
+    justify-content: center;  }
+  
+  .weather .description{
+    
+    font-size: 3.6rem;
+    color: #fff;
+    position: absolute;
+    top: 25rem;
+  }
+  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 60px 0;
+  }
+  .iconImage{
+  
+  color: #fff;
+  font-size: 100px;
+  
+  }
+  .msg{
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  /* footer */
+  
+  .footerr {
+    position: relative;
+    width: 100%;
+    height: 7.5rem;
+    padding-top: 25px;
+
+}
+
+.humidity {
+    left: 3.5rem;
+    position: relative;
+    font-size: 1.6rem;
+    padding-bottom: 8px;
+}
+
+.wind {
+    left: 3.8rem;
+    position: relative;
+    font-size: 1.6rem;
+    padding-bottom: 8px;
+
+}
+
+.Humidityicon {
+  width: 8.2rem;
+  height: 8.2rem;
+  position: absolute;
+  left: -3.1rem;
+  bottom: -5.5rem;
+}
+
+.Windicon {
+  width: 8.2rem;
+  height: 8.2rem;
+  position: absolute;
+  left: -1.1rem;
+  bottom: -5.5rem;
+  
+}
+
+.span1 {
+  position: absolute;
+  left: 3.5rem;
+  bottom: -3.4rem;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.span2 {
+  position: absolute;
+  left: 5.5rem;
+  bottom: -2.4rem;
+  width: 100%;
+  font-size: 2rem;
+}
+
+/* down arrow */
+a.fa { color: white; text-decoration: none; }
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+ 
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce:hover{
+  animation: none;
+}
