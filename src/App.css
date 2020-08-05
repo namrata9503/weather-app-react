@@ -28,7 +28,7 @@ html {
 
 @media (max-width: 900px) {
   html {
-    font-size: 95.5%;
+    font-size: 75.5%;
   }
 }
 
@@ -51,15 +51,16 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  /* padding: 5rem 150px; */
+  height: 657px;
   min-width: 100%;
   background-color: #d5adc8;
 background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
-height: 100vh;
+/* height: 100vh; */
+box-shadow: 0 6px 28px -3px rgba(0, 0, 0, 0.75);
 }
 
 .app.warm {
-  height: 100vh;
+  height: 657px;
   /* background-image: url('./assests/sunny-bg.jpg'); */
   background-size: cover;
   background-position: center;
@@ -69,85 +70,145 @@ height: 100vh;
   min-width: 100%;
   background-color: #734ae8;
   background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%);
-  /* background-image: linear-gradient(to bottom, #3b679e 0%, #2b88d9 40%, #2b88d9 43%,
-   #207cca 49%, #207cca 56%, #7db9e8 100%); */
+  box-shadow: 0 6px 28px -3px rgba(0, 0, 0, 0.75);
 }
 section{
   display: flex;
   
-
+  height: -webkit-fill-available;
 }
 @media screen and (max-width: 850px){
-section {
-    width: 94%;
-}
-}
-@media screen and (max-width: 830px){
-  .app{
-      height: 200vh;
-      
-  }
-  .app.warm{
-    height: 200vh;
-  }
   section {
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-items: center;
     justify-self: center;
     align-items: center;
-      /* margin-top: 50px; */
+    margin-top: 25px;
       
   }
-  }
-  @media screen and (max-width: 500px){
-    .app{
-        height: 200vh;
-        
-    }
-    section {
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      justify-items: center;
-      justify-self: center;
-      align-items: center;
-        /* margin-top: 50px; */
-        
-    }
-    }
+.app{
+  height: auto;
+}
+.app.warm {
+  height: auto;
+}
+.app-main{
+  margin-bottom: 25px;
+}
+}
+
 .app-main {
-  min-height: 85vh;
+  height: 599px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.815));
 
   width: 350px;
   box-shadow: 2px 5px rgba(0, 0, 0, 0.2);
 
 }
+
  .sunny{
-  height: 85vh;
-  width: 350px;
+  height: 599px;
+  width: 400px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.911)), 
   url('./assests/cityday.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-image: linear-gradient(to top,
-     #3b679e 0%, #2b88d9 40%, #2b88d9 43%, #207cca 49%, #207cca 56%, #7db9e8 100%); */
+  box-shadow: 0 6px 28px -3px rgba(0, 0, 0, 0.75);
    
 }
 .winter{
-  height: 85vh;
-  width: 350px;
+  height: 599px;
+  width: 400px;
   background-image: url('./assests/citylights.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0 6px 28px -3px rgba(0, 0, 0, 0.75);
 }
+@media screen and (max-width: 420px){
+  .sunny {
+    
+    width: 360px;
+      
+  }
+  .winter {
+    
+    width: 360px;
+      
+  }
+}
+@media screen and (max-width: 380px){
+  
+  .sunny {
+    
+    width: 310px;
+      
+  }
+   
+  .winter {
+    
+    width: 310px;
+      
+  }
+  .weather-boxx div.iconn{
+    left:145px;
+  }
+  div.weatherr{
+    left:180px;
+  }
+  span.spanh{
+    font-size: 1.8rem;
+    left: 0.5rem;
+  }
+  span.spanw {
+    
+    position: absolute;
+    left: 7.5rem;
+    bottom: -1.2rem;
+    width: 100%;
+    font-size: 1.9rem;
 
+      
+  }
+  footer .Humidityimg {
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    left: 8.9rem;
+    bottom: -0.2rem;
+  }
+  footer .Windimg {
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    right: 3.9rem;
+    bottom: -0.5rem;
+  }
+}
+@media screen and (max-width: 330px)
+{
+.sunny {
+    width: 280px;
+}
+.winter {
+  width: 280px;
+}
+.weather-boxx div.iconn{
+  left:125px;
+}
+i.iconImgg{
+  font-size: 100px;
+}
+div.weatherr{
+  left:150px;
+}
+.app-main{
+  width: 280px;
+}
+}
 .search-box {
   width: 94%;
 }
@@ -187,7 +248,7 @@ section {
   font-size: 22px;
   font-weight: 500;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
  .date {
@@ -204,6 +265,9 @@ section {
 
 
 .weather-boxx  {
+  display: flex;
+    flex-direction: row;
+    top: -118px;
   height: 240px;
   position: relative;
     display: inline-block;
@@ -219,23 +283,35 @@ section {
 }
 .temp{
   position: absolute;
-    top: 100px;
+    top: 125px;
     left: 10px;
 }
 .temp .temperature{
-  font-size: 7rem;
+  font-size: 11rem;
 }
 .temp .cell{
   font-size: 4rem;
 }
- .weatherr .descriptionn {
+.weatherr{
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; */
   position: absolute;
+  top: 170px;
+  left: 204px;
+}
+ .weatherr .descriptionn {
+  
   color: #FFF;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-  top: 178px;
-  left: 10px;
+
+  width: 159px;
+  display: flex;
+  justify-content: flex-start;
+  text-transform: capitalize;
 }
 
 /* .description{
@@ -248,15 +324,16 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
   position: absolute;
-  top: 55px;
-  left: 10px;
+  top: 40px;
+  /* left: 201px; */
+  left: 204px;
 }
-.iconImg{
+.iconImgg{
 
  
  padding-left:10px;
   color: #FFF;
-  font-size: 45px;
+  font-size: 110px;
   
 
 }
@@ -270,12 +347,13 @@ section {
 
 .footer {
   position: relative;
-    width: 100%;
-    height: 5.5rem;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-around;
-    left:-70px;
+  width: 100%;
+  height: 5.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+  left: -63px;
+  bottom: -61px;
 }
 .humidity {
   left: 2.5rem;
@@ -294,15 +372,15 @@ section {
   width: 4.2rem;
   height: 4.2rem;
   position: absolute;
-  left: 7.9rem;
-  bottom: -0.5rem;
+  left: 9.9rem;
+  bottom: 0.5rem;
 }
 
 .Windimg {
   width: 4.2rem;
   height: 4.2rem;
   position: absolute;
-  right: 5.9rem;
+  right: 4.9rem;
   bottom: -0.5rem;
 }
 
@@ -323,10 +401,11 @@ section {
 
 }
 @media screen and (max-width: 750px){
-  .spanh{
-    font-size: 1.9rem;
+  span.spanh{
+    font-size: 1.8rem;
+    left: 0.5rem;
   }
-  .spanw {
+  span.spanw {
     
     position: absolute;
     left: 7.5rem;
@@ -340,7 +419,412 @@ section {
     width: 4.2rem;
     height: 4.2rem;
     position: absolute;
-    left: 10.9rem;
+    left: 11.9rem;
+    bottom: -0.5rem;
+  }
+  .Windimg {
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    right: 8.9rem;
     bottom: -0.5rem;
   }
 }
+/*search nextt 3 days forcast */ 
+.search-days{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  /* left: 59%; */
+  top: 51%;
+  border: 0;
+  margin: 0 auto;
+
+}
+@media screen and (max-width: 850px){
+  .search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* left: 59%; */
+    top: 145%;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+}
+@media screen and (max-width: 420px){
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+  }
+  .search-days div:first-child{
+    width: 320px;
+  }
+  div.search-days > :nth-child(1):hover > :first-child{
+    background-color: transparent;
+    min-width: 18px;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      border: 0;
+      border-radius: 0;
+      padding: 10px;
+  }
+}
+@media screen and (max-width: 420px){
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+  }
+  .search-days div:nth-child(2){
+    width: 320px;
+  }
+  div.search-days > :nth-child(2):hover > :first-child{
+    background-color: transparent;
+    min-width: 18px;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      border: 0;
+      border-radius: 0;
+      padding: 10px;
+  }
+}
+@media screen and (max-width: 420px){
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+  }
+  .search-days div:nth-child(3){
+    width: 320px;
+  }
+  div.search-days > :nth-child(3):hover > :first-child{
+    background-color: transparent;
+    min-width: 18px;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      border: 0;
+      border-radius: 0;
+      padding: 10px;
+  }
+}
+@media screen and (max-width: 380px){
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+  }
+  .search-days div:first-child{
+    width: 280px;
+    
+  }
+  .search-days div:nth-child(2){
+    width: 280px;
+  }
+  .search-days div:nth-child(3){
+    width: 280px;
+  }
+}
+@media screen and (max-width: 330px){
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 10px;
+  }
+  .search-days div:first-child{
+    width: 250px;
+    
+  }
+  .search-days div:nth-child(2){
+    width: 250px;
+  }
+  .search-days div:nth-child(3){
+    width: 250px;
+  }
+}
+.search-days :first-child {
+  display: flex;
+  flex-direction: row;
+  
+  height: 55px;
+  width: 358px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.596);
+border-right: 0;
+transition: all .3s ease-in-out;
+}
+.search-days :nth-child(1):hover {
+ font-size: 2rem;
+  
+  background: rgba(27, 26, 26, 0.5);
+ transform: scale(1.1);
+  border-radius: 0;
+ 
+}
+.search-days > :nth-child(1):hover > :first-child{
+  background-color: transparent;
+  min-width: 102px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+}
+
+.search-days  :nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  width: 358px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.596);
+  border-right: 0;
+}
+.search-days :nth-child(2):hover {
+  font-size: 2rem;
+   
+   background: rgba(27, 26, 26, 0.5);
+  transform: scale(1.1);
+   border-radius: 0;
+  
+ }
+ .search-days > :nth-child(2):hover > :first-child{
+  background-color: transparent;
+  min-width: 102px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+}
+.search-days  :nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+  width: 358px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.596);
+  border-right: 0;
+}
+.search-days :nth-child(3):hover {
+  font-size: 2rem;
+   
+   background: rgba(27, 26, 26, 0.5);
+  transform: scale(1.1);
+   border-radius: 0;
+  
+ }
+ .search-days > :nth-child(3):hover > :first-child{
+  background-color: transparent;
+  min-width: 102px;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    border: 0;
+    border-radius: 0;
+    padding: 10px;
+}
+
+/* nth child 1 */
+
+.search-days > :nth-child(1) > :first-child  {
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+
+}
+.search-days > :nth-child(1) > :nth-child(2){
+  
+  font-size: 1.6rem;
+  min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+}
+.search-days > :nth-child(1) > :nth-child(3){
+border: 0;
+  width: 50px;
+  height: 50px;
+}
+.search-days > :nth-child(1) > :nth-child(3) :first-child{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  }
+.search-days > :nth-child(1) > :nth-child(4){
+
+  
+  margin:0 10px;
+  font-size: 1.6rem;
+  min-width: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+border: 0;
+border-radius: 0;
+ 
+}
+
+.search-days > :nth-child(1) > :nth-child(4) :nth-child(1){
+  border: 0;
+ 
+  font-size: 1.8rem;
+  line-height: 2rem;
+  height: 0;
+  /* position: absolute;
+  top: 20px;
+  right: 9px; */
+  
+}
+.search-days > :nth-child(1) > :nth-child(4) :nth-child(2){
+/* 
+  background-color: pink;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 54px;
+  right: 17px; */
+  display: none;
+}
+
+/* nth child 2 */
+
+.search-days > :nth-child(2) > :first-child  {
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+
+}
+.search-days > :nth-child(2) > :nth-child(2){
+  
+  font-size: 1.6rem;
+      min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+}
+.search-days > :nth-child(2) > :nth-child(3){
+  border: 0;
+  width: 50px;
+  height: 50px;
+}
+.search-days > :nth-child(2) > :nth-child(3) :first-child{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.search-days > :nth-child(2) > :nth-child(4){
+
+  
+  margin:0 10px;
+  font-size: 1.6rem;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+ 
+}
+
+.search-days > :nth-child(2) > :nth-child(4) :nth-child(1){
+  border: 0;
+  
+  font-size: 1.8rem;
+  line-height: 2rem;
+  height: 0;
+  /* position: absolute;
+  top: 20px;
+  right: 9px; */
+  
+}
+.search-days > :nth-child(2) > :nth-child(4) :nth-child(2){
+/* 
+  background-color: pink;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 54px;
+  right: 17px; */
+  display: none;
+}
+
+/* nth child 3 */
+
+.search-days > :nth-child(3) > :first-child  {
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border: 0;
+  border-radius: 0;
+  padding: 10px;
+
+}
+.search-days > :nth-child(3) > :nth-child(2){
+  
+  font-size: 1.6rem;
+      min-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+}
+.search-days > :nth-child(3) > :nth-child(3){
+  border: 0;
+  width: 50px;
+  height: 50px;
+}
+.search-days > :nth-child(3) > :nth-child(3) :first-child{
+font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search-days > :nth-child(3) > :nth-child(4){
+
+  
+  margin:0 10px;
+  font-size: 1.6rem;
+  min-width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+}
+
+.search-days > :nth-child(3) > :nth-child(4) :nth-child(1){
+  border: 0;
+  
+  font-size: 1.8rem;
+  line-height: 2rem;
+  height: 0;
+  /* position: absolute;
+  top: 20px;
+  right: 9px; */
+  
+}
+.search-days > :nth-child(3) > :nth-child(4) :nth-child(2){
+/* 
+  background-color: pink;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  position: absolute;
+  top: 54px;
+  right: 17px; */
+  display: none;
+}
+

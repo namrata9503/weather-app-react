@@ -1,0 +1,151 @@
+.dayOne {
+    display: inline-block;
+    transition: all .3s;
+     border-right: 2px solid rgba(255, 255, 255, .5); 
+    cursor: pointer;
+    color: white ;
+    font-size: 2rem ;
+    background-color: rgba(27, 26, 26, 0.5);
+
+    height: 195px;
+    width: 135px;
+}
+
+.dayOne:hover  {
+   transform: scale(1.1);
+   border: 0;
+   box-shadow: 0 0 11px rgba(33,33,33,.2); 
+   /* background-color: #d5adc8;
+   background-image: linear-gradient(315deg, #7a2e61 0%, #5e0e11 74%); */
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   /* height: 195px;
+   width: 150px; */
+}
+@media screen and (max-width: 500px){
+  
+    .dayOne {
+      
+      width: 111px;
+        
+    }
+    div.dayOne:hover .main {
+        background-color: rgb(29, 22, 22);
+        padding: 0;
+        text-transform: uppercase;
+        line-height: 3.6rem;
+        font-size: 1.8rem;
+        /* text-align: center; */
+        margin: 0px auto;
+        width: 69px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    
+    }
+}
+@media screen and (max-width: 430px){
+  
+    .dayOne {
+      
+      width: 100px;
+        
+    }
+    .dayOne .tempp{
+        font-size: 2.6rem;
+    padding: 0px 15px;
+    text-align: center;
+    font-weight: 900;
+    }
+}
+@media screen and (max-width: 380px){
+  
+    .dayOne {
+      /* transform: scale(.9); */
+      width: 96px;
+        
+    }
+}
+@media screen and (max-width: 350px){
+  
+    .dayOne {
+               
+         width: 90px;
+         /* transform: scale(.8); */
+                 
+         }
+   .dayOne .main{
+        background-color: grey;
+        padding: 0;
+        text-transform: uppercase;
+        line-height: 3.6rem;
+        font-size: 1.8rem;
+        /* text-align: center; */
+        margin: 0px auto;
+        width: 69px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+         }
+
+ .dayOne .iconImg{
+     font-size: 40px;
+ }
+     
+}
+.dayOne:hover .main {
+    background-color: rgb(29, 22, 22);
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    font-size: 1.8rem;
+    /* text-align: center; */
+    margin: 0px auto;
+    width: 99px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.main{
+    background-color: grey;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 3.6rem;
+    font-size: 1.8rem;
+    /* text-align: center; */
+    margin: 0px auto;
+    width: 99px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.tempp{
+    font-size: 3rem;
+    padding: 0 30px;
+    text-align: center;
+    font-weight: 900;
+}
+.iconnn{
+    display: flex;
+    justify-content: center;
+
+    
+  }
+  .iconImg{
+  
+  
+    font-size: 54px;
+    margin: 0 20px 8px 20px;
+    font-weight: 400;
+    color: whitesmoke;
+  }
+  .shortDate{
+    height: 55px;
+    margin: 0 30px 10px 30px;
+    
+  }
+  .dayy{
+      font-size: 1.6rem;
+      line-height: 1rem;
+  }
+  .dt{
+    font-size: 1.6rem;
+      line-height: 1.4rem;
+  }
