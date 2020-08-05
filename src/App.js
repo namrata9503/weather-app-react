@@ -37,7 +37,6 @@ function App() {
     fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
     .then(res=>res.json())
     .then(result => {
-      console.log("search result : ",result);
       setWeather(result);
      getDays(query);
       setQuery('');
@@ -111,7 +110,6 @@ function App() {
 
          const d3 = dateAr3[8] + '' + dateAr3[9];
 
-      console.log("data result ", data);
       setCity( data.city.name);
       setDay1({
         main: data.list[1].weather[0].main,
@@ -141,8 +139,6 @@ function App() {
         id: data.list[17].weather[0].id
       });
       
-      console.log('txt date ', data.list[1].dt_txt.split(' ')[0]);
-      console.log('day date ', newDate1);
     }
   }
 

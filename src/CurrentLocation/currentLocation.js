@@ -112,7 +112,6 @@ import DayThree from '../forecast/DayThree/DayThree';
         this.setState({showMsg: "Unable to search current location 😩"})
        // return null;
       }
-      console.log("data ", data, data.name);
       this.setState({
 
         lat: lat,
@@ -136,7 +135,6 @@ import DayThree from '../forecast/DayThree/DayThree';
         );
       const data = await apic.json();
       if(data){
-        console.log("current data : ", data);
         this.get_dailyWeatherIcon1(weatherIcons, data.list[1].weather[0].id);
         this.get_dailyWeatherIcon2(weatherIcons, data.list[9].weather[0].id);
         this.get_dailyWeatherIcon3(weatherIcons, data.list[17].weather[0].id);
