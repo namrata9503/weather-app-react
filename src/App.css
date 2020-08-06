@@ -436,29 +436,632 @@ div.weatherr{
   flex-direction: column;
   position: absolute;
   /* left: 59%; */
-  top: 51%;
+  top: 23%;
   border: 0;
   margin: 0 auto;
 
 }
-@media screen and (max-width: 850px){
-  .search-days{
+
+
+@media screen and (max-width: 960px)  {
+  div.search-days{
     display: flex;
     flex-direction: column;
     position: absolute;
-    /* left: 59%; */
-    top: 168%;
+    
+    top: 44% !important;
     border: 0;
     margin: 0 auto;
   
   }
+  div.weatherr{
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 170px;
+    left: 134px;
+  }
 }
-@media screen and (max-width: 420px){
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 44% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.weatherr{
+
+    position: absolute;
+    top: 170px;
+    left: 134px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; */
+  div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 44% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.weatherr{
+
+    position: absolute;
+    top: 170px;
+    left: 134px;
+  }
+}
+@media only screen and (max-device-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 126% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.iconn{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 60px;
+    /* left: 201px; */
+    left: 204px;
+  }
+  i.iconImgg{
+    font-size: 90px;
+  }
+  div.weatherr{
+
+    position: absolute;
+    top: 170px;
+    left: 194px;
+  }
+}
+@media only screen and (device-width: 768px) {
+  /* default iPad screens */
+  div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 170% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.weatherr{
+
+    position: absolute;
+    top: 170px;
+    left: 194px;
+  }
+}
+@media screen and (max-width: 850px)  {
+  div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 124% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.weatherr{
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 170px;
+    left: 184px;
+  }
+}
+@media screen and (max-width: 380px)  {
+  /* div.search-days{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 124% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  } */
+  div.weatherr{
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+    position: absolute;
+    top: 170px;
+    left: 136px;
+  }
+}
+
+
+/* mobile devices */
+/* Portrait */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 568px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 166% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 375px) 
+  and (device-height: 667px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 146% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+/* Portrait */
+@media screen 
+  and (device-width: 414px) 
+  and (device-height: 736px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 128% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+/* Portrait */
+@media screen 
+  and (device-width: 375px) 
+  and (device-height: 812px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 116% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+/* Portrait */
+@media screen 
+  and (device-width: 768px) 
+  and (device-height: 1024px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 94% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+/* Portrait */
+@media screen 
+  and (device-width: 1024px) 
+  and (device-height: 1366px) 
+  {
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 25% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+/* Portrait  */
+@media only screen 
+  and (device-width: 411px) 
+  and(device-height: 731px)
+ { 
+  .search-days div:first-child{
+    width: 280px;
+    
+  }
+  .search-days div:nth-child(2){
+    width: 280px;
+  }
+  .search-days div:nth-child(3){
+    width: 280px;
+  }
   div.search-days{
     padding: 10px 0;
     margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 118% !important;
+    border: 0;
+    margin: 0 auto;
+  
   }
+  div.weatherr{
+   
+    position: absolute;
+    top: 170px;
+    left: 136px;
+  }
+}
+@media screen 
+
+  and (device-width: 411px) 
+  and (device-height: 823px) 
+ { 
   .search-days div:first-child{
+    width: 280px;
+    
+  }
+  .search-days div:nth-child(2){
+    width: 280px;
+  }
+  .search-days div:nth-child(3){
+    width: 280px;
+  }
+  div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 118% !important;
+    border: 0;
+    margin: 0 auto;
+  
+  }
+  div.weatherr{
+   
+    position: absolute;
+    top: 170px;
+    left: 136px;
+  }
+}
+
+@media screen 
+
+  and (device-width: 375px) 
+  and (device-height: 570px) 
+   {
+    
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 168% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+
+@media screen 
+
+  and (device-width: 425px) 
+  and (device-height: 570px) 
+   {
+    
+    .search-days div:first-child{
+      width: 360px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 360px;
+    }
+    .search-days div:nth-child(3){
+      width: 360px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 168% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+@media screen 
+
+  and (device-width: 1024px) 
+  and (device-height: 570px) 
+   {
+    
+    .search-days div:first-child{
+      width: 360px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 360px;
+    }
+    .search-days div:nth-child(3){
+      width: 360px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 58% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+@media screen 
+
+  and (device-width: 768px) 
+  and (device-height: 570px) 
+   {
+    
+    .search-days div:first-child{
+      width: 360px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 360px;
+    }
+    .search-days div:nth-child(3){
+      width: 360px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 168% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+
+@media screen 
+
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+   {
+    
+    .search-days div:first-child{
+      width: 280px;
+      
+    }
+    .search-days div:nth-child(2){
+      width: 280px;
+    }
+    .search-days div:nth-child(3){
+      width: 280px;
+    }
+    div.search-days{
+      padding: 10px 0;
+      margin: 0 15px;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      
+      top: 148% !important;
+      border: 0;
+      margin: 0 auto;
+    
+    }
+    div.weatherr{
+     
+      position: absolute;
+      top: 170px;
+      left: 136px;
+    }
+}
+
+@media screen and (max-width: 420px){
+  /* div.search-days{
+    padding: 10px 0;
+    margin: 0 15px;
+  } */
+  .search-days div:first-child{
+    width: 320px;
+  }
+  .search-days div:nth-child(2){
+    width: 320px;
+  }
+  .search-days div:nth-child(3){
     width: 320px;
   }
   div.search-days > :nth-child(1):hover > :first-child{
@@ -471,47 +1074,12 @@ div.weatherr{
       padding: 10px;
   }
 }
-@media screen and (max-width: 420px){
-  div.search-days{
-    padding: 10px 0;
-    margin: 0 15px;
-  }
-  .search-days div:nth-child(2){
-    width: 320px;
-  }
-  div.search-days > :nth-child(2):hover > :first-child{
-    background-color: transparent;
-    min-width: 18px;
-      font-size: 1.4rem;
-      text-transform: capitalize;
-      border: 0;
-      border-radius: 0;
-      padding: 10px;
-  }
-}
-@media screen and (max-width: 420px){
-  div.search-days{
-    padding: 10px 0;
-    margin: 0 15px;
-  }
-  .search-days div:nth-child(3){
-    width: 320px;
-  }
-  div.search-days > :nth-child(3):hover > :first-child{
-    background-color: transparent;
-    min-width: 18px;
-      font-size: 1.4rem;
-      text-transform: capitalize;
-      border: 0;
-      border-radius: 0;
-      padding: 10px;
-  }
-}
+
 @media screen and (max-width: 380px){
-  div.search-days{
+  /* div.search-days{
     padding: 10px 0;
     margin: 0 15px;
-  }
+  } */
   .search-days div:first-child{
     width: 280px;
     
@@ -526,7 +1094,14 @@ div.weatherr{
 @media screen and (max-width: 330px){
   div.search-days{
     padding: 10px 0;
-    margin: 0 10px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    top: 168% !important;
+    border: 0;
+    margin: 0 auto;
   }
   .search-days div:first-child{
     width: 250px;
