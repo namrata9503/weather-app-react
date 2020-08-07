@@ -28,7 +28,7 @@ function App() {
   const [day1, setDay1] = useState({});
   const [day2, setDay2] = useState({});
   const [day3, setDay3] = useState({});
-  const [day4, setDay4] = useState({});
+  
 
 
   
@@ -38,11 +38,11 @@ function App() {
     .then(res=>res.json())
     .then(result => {
       setWeather(result);
-     getDays(query);
+    
       setQuery('');
       if(result.weather){
         get_WeatherIcon(weatherIcons, result.weather[0].id);
-      
+        getDays(query);
         setShowMsg('');
        }
       else{
@@ -357,26 +357,7 @@ function App() {
      
   
     </div> 
-    
-    <footer className="footer">
-    <img
-        src={HumidityIcon}
-        className="Humidityimg"
-        alt="Humidity"
-      />
-      <h4 className="humidity">Humidity: 
-      <span className="spanh">{weather.main.humidity} %</span> </h4>
-      
-    <img
-        src={WindIcon}
-        className="Windimg"
-        alt="Wind"
-      />
-       <h4 className="wind">
-       Wind speed:<span className="spanw">{DegreesToDirection(weather.wind.deg)} {weather.wind.speed} KPH</span></h4>
-
-    </footer>
-    <div className="days search-days">
+    <div className=" search-days">
     <DayOne 
           temp={day1.temp} 
           date={day1.date} 
@@ -407,7 +388,30 @@ function App() {
           id={day3.id} 
           icons={icon}
           iconss={icon3}/> 
-   </div>     
+   </div>  
+    <footer className="footer">
+    
+      <h4 className="humidity">Humidity: 
+      <span className="spanh">{weather.main.humidity} %</span> 
+      <img
+        src={HumidityIcon}
+        className="Humidityimg"
+        alt="Humidity"
+      />
+      </h4>
+      
+   
+       <h4 className="wind">
+       Wind speed:<span className="spanw">{DegreesToDirection(weather.wind.deg)} {weather.wind.speed} KPH</span>
+       <img
+        src={WindIcon}
+        className="Windimg"
+        alt="Wind"
+      />
+       </h4>
+
+    </footer>
+      
     </div>
     
     ) : ('')}
